@@ -1,0 +1,131 @@
+@use '../../utils' as*;
+
+
+.ri_mobile-menu{
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    left: 0;
+    top: 100%;
+    background-color: #079992;
+    z-index: 9999;
+    overflow-y: scroll;
+    opacity: 0;
+    visibility: hidden;
+    padding-bottom: 50px;
+    transition: all 0.5s ease;
+    z-index: 999;
+
+    &-area{
+        padding-top: 60px;
+        margin-left: 50px;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 50px;
+        .social{
+            margin-bottom: 20px;
+            display: flex;
+            gap: 30px;
+            & a{
+                color: #FFFFFF;
+                transition: all 0.3s ease;
+                & i{
+                    font-size: 30px;
+                }
+                &:hover{
+                    color: var(--orange-clr);
+                }
+            }
+        }
+        .ri-accordion-item{
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            width: 300px;
+            @media #{$sm} {
+                width: 240px;
+            }
+            .ri-accordion-header{
+                background-color: transparent;
+                border: none;
+                 margin: 0;
+
+                
+
+                .ri-accordion-button{
+                    background-color: transparent;
+                    border: none;
+                    border: 1px solid #079992;
+                    margin: 0;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    font-family: $Pop;
+                    text-transform: uppercase;
+                    padding: 15px 0;
+                    & a{
+                        color: var(--black-clr);
+                        &:hover{
+                            color: #FFFFFF;
+                        }
+                    }
+                    & i{
+                       margin-left: 20px;
+                       margin-top: 5px;
+                        &::before{
+                        transform: rotate(90deg);
+                        display: block;
+                        font-size: 20px;
+                        width: 20px;
+                        height: 20px;
+                        color: black;
+                        }
+                    }
+                &.collapsed{
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    color: var(--black-clr);
+
+                }
+                 
+
+                }
+            }
+            .ri-accordion-body{
+                border: none;
+                margin-top: 0;
+                padding: 0;
+                & ul{
+                    list-style: none;
+                    margin-left: 50px;
+                    padding: none;
+                    & li{
+                        margin: 10px 0;
+                        & a{
+                            padding: 10px 0;
+                            color: var(--text-clr);
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            font-family: $Dm;
+                            font-weight: 500;
+                            transition: all 0.3s ease;
+                        }
+                        &:hover{
+                            & a{
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-active{
+        @media #{$md} {
+         width: 100%;
+         opacity: 1;
+        visibility: visible;
+        }
+    }
+}

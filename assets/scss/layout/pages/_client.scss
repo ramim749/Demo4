@@ -1,0 +1,13 @@
+@use '../../utils' as*;
+
+
+
+.ri_client{
+    margin-bottom: 110px;
+    @media #{$md} {
+        margin-bottom: 60px;
+    }
+    @media #{$sm} {
+        margin-bottom: 40px;
+    }
+}

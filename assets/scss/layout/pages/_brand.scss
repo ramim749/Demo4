@@ -1,0 +1,63 @@
+@use '../../utils' as*;
+
+
+
+
+.ri_brand{
+    padding-top: 130px;
+    padding-bottom: 170px;
+    @media #{$md} {
+        padding-top: 80px;
+        padding-bottom: 130px;
+    }
+    @media #{$sm} {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    &-title{
+        margin-bottom: 70px;
+        @media #{$md} {
+            margin-bottom: 40px;
+        }
+    }
+    &-area{
+        
+        .logo-area1{
+        display: flex;
+        justify-content: space-between;
+        }
+        .logo-area2{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 150px;
+        margin-top: 30px;
+        }
+        .logo1{
+            background-color: var(--white-clr);
+            width: 186px;
+            height: 186px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo2{
+            background-color: var(--white-clr);
+            width: 144px;
+            height: 144px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo3{
+            background-color: var(--white-clr);
+            width: 214px;
+            height: 214px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

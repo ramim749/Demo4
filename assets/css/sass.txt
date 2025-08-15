@@ -1,0 +1,1 @@
+sass --watch D:\RAMIM\PROJECT\Sixart\assets\scss\main.scss:D:\RAMIM\PROJECT\Sixart\assets\css\style.css

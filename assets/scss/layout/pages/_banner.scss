@@ -1,0 +1,114 @@
+@use '../../utils' as*;
+
+
+
+
+.ri_banner{
+    margin-top: 130px;
+    margin-bottom: 120px;
+    &-area{
+        & p{
+            font-family: $Pop;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: var(--text-clr);
+            
+
+            & span{
+                color: var(--blue-clr);
+            }
+
+        }
+    }
+    &-slider{
+        margin-top: 60px;
+        .swiper-wrapper{
+            -webkit-transition-timing-function: linear;
+	        transition-timing-function: linear;
+            .swiper-slide{
+                width: auto;
+	            display: inline-block;
+                .img{
+                    height: 110px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+.ri_banner2{
+    padding-top: 130px;
+    padding-bottom: 30px;
+
+    
+    @media #{$md} {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    @media #{$sm} {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    &-area{
+         .swiper-wrapper{
+            -webkit-transition-timing-function: linear;
+	        transition-timing-function: linear;
+            .swiper-slide{
+                width: auto;
+	            display: inline-block;
+            }
+        }
+        .text{
+            & p{
+                font-family: $Pop;
+                font-weight: 600;
+                font-size: 122px;
+                line-height: 160px;
+                letter-spacing: -2%;
+                vertical-align: middle;
+                color: #151718;
+                margin: 0;
+                color: transparent;
+                -webkit-text-stroke: 1px #151718;
+                @media #{$lg} {
+                    font-size: 100px;
+                    line-height: 130px;
+                }
+                @media #{$md} {
+                    font-size: 70px;
+                    line-height: 90px;
+                }
+                @media #{$mds} {
+                    font-size: 65px;
+                    line-height: 85px;
+                }
+                @media #{$sm} {
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+
+
+            }
+        }
+    }
+}
+.ri_banner3{
+        padding-top: 0;
+        padding-bottom: 130px;
+    @media #{$md} {
+        padding-bottom: 80px;  
+    }
+    @media #{$sm} {
+        padding-bottom: 50px;  
+    }
+    .text{
+        & p{
+            color: #151718;
+        }
+    }
+}

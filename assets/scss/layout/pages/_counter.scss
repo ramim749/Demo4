@@ -1,0 +1,83 @@
+@use '../../utils' as*;
+
+
+
+.ri_counter{
+    padding: 130px 0;
+    @media #{$md} {
+          padding: 80px 0;
+    }
+    @media #{$md} {
+          padding: 50px 0;
+    }
+
+    &-area{
+        display: flex;
+        justify-content: space-between;
+         @media #{$md} {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 50px;
+                }
+        .item{
+            & span{
+                font-family: $Pop;
+                font-weight: 600;
+                font-size: 65px;
+                line-height: 54px;
+                letter-spacing: -1%;
+                color: transparent;
+                -webkit-text-stroke: 1px var(--black-clr);
+                position: relative;
+                @media #{$md} {
+                    font-size: 55px;
+                }
+                @media #{$sm} {
+                    font-size: 40px;
+                    line-height: 100%;
+                }
+                & i{
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 20px;
+                    z-index: 9;
+                    opacity: 50%;
+                    @media #{$md} {
+                        width: 40px;
+                        height: 40px;
+                        top: 18px;
+                    }
+                    @media #{$sm} {
+                        width: 30px;
+                        height: 30px;
+                        top: 12px;
+                    }
+                }
+                & b{
+                    position: relative;
+                    z-index: 999;
+                }
+
+                
+            }
+            & p{
+                margin-top: 13px;
+                font-family: $Ari;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 15px;
+                line-height: 26px;
+                letter-spacing: 5%;
+                text-transform: uppercase;
+                color: var(--black-clr);
+                @media #{$sm} {
+                    font-size: 12px;
+                }
+
+            }
+        }
+    }
+}

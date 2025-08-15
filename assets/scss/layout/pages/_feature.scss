@@ -1,0 +1,145 @@
+@use '../../utils' as*;
+
+
+
+.ri_feature{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    @media #{$md} {
+       padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media #{$sm} {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &-area{
+        position: relative;
+        .title2{
+            z-index: 99;
+            position: relative;
+        }
+        .content{
+            margin-top: 240px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            @media #{$lg} {
+                margin-top: 150px;
+            }
+            @media #{$md} {
+                margin-top: 120px;
+            }
+            @media #{$mds} {
+                margin-top: 100px;
+            }
+            @media #{$sm} {
+                margin-top: 70px;
+            }
+         
+           
+
+            .item{
+                position: relative;
+                & a{
+                    font-family: $Pop;
+                    font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 122px;
+                    line-height: 80px;
+                    letter-spacing: -2%;
+                    vertical-align: middle;
+                    text-decoration: none;
+                    color:transparent;
+                    -webkit-text-stroke: 1px #000000;
+                    z-index: 999;
+                    position: relative;
+                    transition: all 0.3s ease;
+                    @media #{$lg} {
+                        font-size: 90px;
+                        line-height: 80px;
+
+                    }
+                    @media #{$md} {
+                        font-size: 70px;
+                        line-height: 70px;
+
+                    }
+                    @media #{$mds} {
+                        font-size: 50px;
+                        line-height: 60px;
+
+                    }
+                    @media #{$sm} {
+                        font-size:35px;
+                        line-height: 50px;
+
+                    }
+
+                }
+                .img{
+                    position: absolute;
+                    bottom: 20px;
+                    left: 75px;
+                    width: 290px;
+                    height: auto;
+                    visibility: hidden;
+                    opacity: 0;
+                    z-index: 9;
+                    transition: all 0.3s ease;
+
+                    @media #{$lg} {
+                        width:200px ;
+                    }
+                    @media #{$md} {
+                        width:170px ;
+                        left: 30px;
+                    }
+                    @media #{$mds} {
+                        width:130px ;
+                        left: 20px;
+                    }
+                    @media #{$sm} {
+                        width:80px ;
+                        left: 0;
+                    }
+
+                }
+
+                &:hover{
+                    & a{
+                    color: #202026;
+                    }        
+                    .img{
+                        visibility: visible;
+                        opacity: 1;
+                    }            
+                }
+            }
+        }
+        .vector{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 230px;
+            height: 225px;
+            z-index: 9;
+            @media #{$md} {
+                
+            }
+        }
+    }
+
+    &.service{
+        padding-top: 30px;
+        padding-bottom: 110px;
+         @media #{$md} {
+        padding-top: 30px;
+        padding-bottom: 80px;
+        }
+         @media #{$sm} {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        }
+    }
+}
