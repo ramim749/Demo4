@@ -1,5 +1,9 @@
 
-          
+  $(document).ready(function() {
+	$('.video1').magnificPopup({
+    type: 'iframe'
+  });
+});
 
 //header.......
  $(document).ready(function (){
@@ -13,29 +17,19 @@
 });
  });
 
- $(document).ready(function (){
-  function mobileMenu() {
-    const windowWidth = $(window).width(); 
+//  $(document).ready(function (){
+//   function mobileMenu() {
+//     const windowWidth = $(window).width(); 
 
-    if (windowWidth < 992) {
-        //   $(".ri-menu-bar").click(function(){
-        //   $(".ri_mobile-menu").toggleClass("ri_mobile-menu-active")
-        // })
-    }
-//      else {
-//       if (!$(".work1").hasClass("slick-initialized")) {
-//         $(".work1").slick({
-//           fade: false,
-//         });
-//       }
-//     }
-  }
-  mobileMenu();
-// On resize
-  $(window).on("resize", function () {
-     mobileMenu();
-  });
-});
+//     if (windowWidth < 992) {
+//     }
+//   }
+//   mobileMenu();
+// // On resize
+//   $(window).on("resize", function () {
+//      mobileMenu();
+//   });
+// });
 
  $(".header-search").click(function(){
   $(".ri_header-search").addClass("ri_header-search-active")
@@ -51,28 +45,7 @@
 // header end.......
 
 
-// $(document).ready(function (){
-//   function handleSlick() {
-//     const windowWidth = $(window).width();
 
-//     if (windowWidth > 991) {
-//       if ($(".work1").hasClass("slick-initialized")) {
-//         $(".work1").slick("unslick");
-//       }
-//     } else {
-//       if (!$(".work1").hasClass("slick-initialized")) {
-//         $(".work1").slick({
-//           fade: false,
-//         });
-//       }
-//     }
-//   }
-//   handleSlick();
-// // On resize
-//   $(window).on("resize", function () {
-//     handleSlick();
-//   });
-// });
 
 
 // // counter js======
@@ -166,7 +139,6 @@ $(".project3").click(function(){
 
  var swiper = new Swiper(".banner1", {
       slidesPerView: 'auto',
-      spaceBetween: 130,
       centeredSlides: true,
       freemode:true,
       infinite:true,
@@ -177,16 +149,21 @@ $(".project3").click(function(){
         delay: 1,
         disableOnInteraction: true,
       },
-       breakpoints: {
-        992: {
-        spaceBetween: 80,
-          
-        },
-        575: {
-          spaceBetween: 50,
-        },
-       
-      },
+      breakpoints: {
+    320: {
+      spaceBetween: 40,
+    },
+    640: {
+      spaceBetween: 70,
+    },
+    1024: {
+      spaceBetween: 100,
+    },
+    1440: {
+      spaceBetween: 130,
+    },
+   
+  }
      
     });
 

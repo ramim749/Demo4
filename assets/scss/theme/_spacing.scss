@@ -47,6 +47,46 @@
 }
 
 
+.pt-130{
+    padding-top: 130px;
+    @media #{$md} {
+        padding-top: 80px;
+    }
+    @media #{$sm} {
+        padding-top: 50px;
+    }
+}
+.pb-130{
+    padding-bottom: 130px;
+    @media #{$md} {
+        padding-bottom: 80px;
+    }
+    @media #{$sm} {
+        padding-bottom: 50px;
+    }
+}
+
+
+
+.mt-130{
+    margin-top: 130px;
+    @media #{$md} {
+        margin-top: 80px;
+    }
+    @media #{$sm} {
+        margin-top: 50px;
+    }
+}
+
+.mb-130{
+    margin-bottom: 130px;
+    @media #{$md} {
+        margin-bottom: 80px;
+    }
+    @media #{$sm} {
+        margin-bottom: 50px;
+    }
+}
 
 
 

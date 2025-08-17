@@ -74,7 +74,10 @@ img{
 }
 
 .fix {
-    overflow:hidden
+    overflow:hidden;
+}
+.visible {
+    overflow:visible;
 }
 .clear{
     clear: both;

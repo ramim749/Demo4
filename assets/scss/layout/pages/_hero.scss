@@ -2,17 +2,21 @@
 
 
 .ri_hero{
+    position: relative;
     padding-top: 220px;
     padding-bottom: 130px;
+    overflow: hidden;
     @media #{$md} {
-        padding-top: 190px;
+        padding-top: 160px;
         padding-bottom: 80px;
     }
     @media #{$sm} {
-        padding-top: 170px;
+        padding-top: 130px;
         padding-bottom: 60px;
     }
     &-area{
+        position: relative;
+        z-index: 99;
         .left{
             width: 620px;
 
@@ -38,6 +42,7 @@
                     align-items: center;
                     @media #{$sm} {
                     margin-left: 0;
+                    margin-top: 10px;
                         }
                     .play-icon{
                         width: 70px;
@@ -50,6 +55,10 @@
                         & i {
                             color: var(--white-clr);
                             font-size: 15px;
+                        }
+                        @media #{$sm} {
+                            width: 50px;
+                            height: 50px;
                         }
 
                     }
@@ -71,6 +80,13 @@
         }
         .hero-thumb{
             @media #{$md} {
+                margin: 0 70px;
+              margin-top: 40px;
+              
+            }
+            @media #{$sm} {
+                margin: 0 20px;
+              margin-top: 20px;
               
             }
             & img{
@@ -184,6 +200,8 @@
     }
     &-bottom{
         margin-top: 115px;
+        position: relative;
+        z-index: 99;
          @media #{$md} {
                     margin-top: 60px;
                     }
@@ -287,6 +305,54 @@
                 }
             }
         }
+    }
+    .bg-ellipse1{
+        position: absolute;
+        width: 500px;
+        height: 750px;
+        border-radius: 100%;
+        background-color: #EED064;
+        box-shadow: 0 0 100px 300px #EED064;
+        opacity: 25%;
+        top: 460px;
+        left: -211px;
+        z-index: 1;
+    }
+    .bg-ellipse2{
+        position: absolute;
+        width: 480px;
+        height: 715px;
+        border-radius: 100%;
+        background-color: #33CC79;
+        box-shadow: 0 0 100px 100px #33CC79;
+        opacity: 25%;
+        top: -132px;
+        left: 710px;
+        z-index: 1;
+    }
+    .bg-ellipse3{
+        position: absolute;
+        width: 500px;
+        height: 750px;
+        border-radius: 100%;
+        background-color: #FF8A93;
+        box-shadow: 0 0 100px 200px #FF8A93;
+        opacity: 25%;
+        right: -270px;
+        bottom: 86px;
+        z-index: 1;
+    }
+    .bg-ellipse4{
+        position: absolute;
+        width: 453px;
+        height: 585px;
+        border-radius: 100%;
+        background-color: #6864ED;
+        box-shadow: 0 0 100px 100px #6864ED;
+        opacity: 25%;
+        right: 518px;
+        bottom: 176px;
+        z-index: 1;
     }
 }
 
@@ -460,9 +526,11 @@
         padding: 294px 0 158px 0;
         position: relative;
         z-index: 9;
+         @media #{$md} {
+                 padding: 250px 0 80px 0;
+                }
          @media #{$sm} {
                  padding: 200px 0 80px 0;
-
                 }
         .text{
             position: relative;

@@ -108,6 +108,19 @@
             }
         }
     }
+    &.color-white{
+        & ul{
+            & li{
+                & a{
+                color: var(--white-clr);
+                transition: all 0.3s ease;
+                &:hover{
+                    color: var(--orange-clr);
+                }
+                }
+            }
+        }
+    }
    }
 
    &-right{
@@ -186,6 +199,7 @@
     background-color: transparent;
     position: absolute;
     width: 100%;
+   
    }
    &.sticky-header{
     position: fixed;
@@ -196,6 +210,9 @@
     z-index: 9999;
     -webkit-animation: 0.5s ease-in-out 0s normal none 1 running ri-fadeInDown ;
     animation: 0.5s ease-in-out 0s normal none 1 running ri-fadeInDown ;
+     &.black{
+        background-color: #000000;
+    }
    }
     &-area{
             display: flex ;
